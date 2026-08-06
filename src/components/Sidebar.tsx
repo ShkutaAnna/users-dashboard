@@ -11,7 +11,6 @@ export default function Sidebar() {
   const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(true);
   
-  // test
   return (
     <aside className={`bg-white p-4 rounded-md
       flex-shrink-0

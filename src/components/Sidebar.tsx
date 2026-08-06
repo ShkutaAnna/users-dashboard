@@ -8,7 +8,7 @@ import ChevRightIcon from "../assets/icons/chev-right.svg?react";
 import ChevLeftIcon from "../assets/icons/chev-left.svg?react";
 
 export default function Sidebar() {
-  const navigate = useNavigate(); // test
+  const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(true);
   
   return (

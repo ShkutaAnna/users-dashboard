@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import NavButton from "./UI/NavButton";
 
@@ -10,6 +10,10 @@ import ChevLeftIcon from "../assets/icons/chev-left.svg?react";
 export default function Sidebar() {
   const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(true);
+
+  const location = useLocation();
+
+  console.log(location.pathname);
   
   return (
     <aside className={`bg-white p-4 rounded-md

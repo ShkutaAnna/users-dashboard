@@ -9,7 +9,7 @@ export default function UsersCards({ users }: Props) {
     <>
       {users.map(user => (
         <p key={user.id}>
-          {user.name}
+          {user.fullName}
         </p>
       ))}
     </>

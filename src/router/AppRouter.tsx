@@ -6,7 +6,7 @@ import MainLayout from "../layouts/MainLayout";
 
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/users-dashboard">
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Dashboard />} />
